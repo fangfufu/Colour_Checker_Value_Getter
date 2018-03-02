@@ -1,6 +1,7 @@
 function [RGB, CCP] = GetColourCheckerRGB(varargin)
-%GETCOLOURCHECKERVALUES Get the RGB values of a colour checker, and obtain
-%the coordinates of the colour checker
+%GetColourCheckerRGB Get the RGB values of a colour checker
+%   Note that this function outputs the colour checker in row-then-column 
+%   format.
 %   
 %   Parameters:
 %       Mandatory:

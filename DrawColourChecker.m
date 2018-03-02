@@ -5,7 +5,6 @@ function [ ] = DrawColourChecker(inMat, ncol, nrow)
 %                   RGB or XYZ
 %       ncols : The number of columns in this colour checker
 %       nrows : The nubmer of rows in this colour checker
-%
 
 
 %% Sanity checks
