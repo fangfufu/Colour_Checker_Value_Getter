@@ -101,6 +101,10 @@ else
     CI = imcrop(CI, CCTBB);
     RGB = ReadRGB(CI, imgGamma, CCSS);
 end
+
+% These functions were designed to be row-then-column, but everyone else's
+% data seem to be column-then-row.
+RGB = TransposeColourChecker(RGB, CCSS.yCount, CCSS.xCount);
 end
 
 function [ outImg, inPts ] = RegulariseImg(inImg, varargin)
@@ -314,7 +318,6 @@ if exist('CCSStruct', 'var')
 
     cpc = CCSStruct.cpc;
 
-%     figH = figure;
     imshow(img.^imgGamma);
 
     hold on;
