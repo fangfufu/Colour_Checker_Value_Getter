@@ -66,7 +66,7 @@ if isempty(CCP)
 
     waitfor(msgbox(...
         'Let''s regularise colour checker image'));
-    % CCCC : Colour Checker Corner Coordinates
+    % CCCC : Colour Checker Coordinates
     [CI, CCC] = RegulariseImg(CI, 'imgGamma', imgGamma);
 
     waitfor(msgbox(...

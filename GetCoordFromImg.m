@@ -15,6 +15,7 @@ for i = 1:npts
 end
 hold off;
 
-len = sqrt(sum((pts(1,:) - pts(2,:)).^2));
+len = mean([sqrt(sum((pts(1,:) - pts(2,:)).^2)), ...
+    sqrt(sum((pts(3,:) - pts(4,:)).^2))]);
 
 end
